@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#">Logo</a>
+            </div>
+            <div class="nav-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Sweets <br>
+                    <span class="typing-text">Cakes</span>
+
+                </h1>
+                <p>The best cakes in town delivered to your door</p>
+            </div>
+        </section>
+    </header>
+    <main class="main-content">
+
+        <div class="text-content">
+            <h2>Welcome to sweets cakes</h2>
+            <p>Discover a realm of artisanal delight at our high-end pastry shop. Our creations are a fusion of premium
+                ingredients and masterful craftsmanship, meticulously curated by our skilled chefs.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur. Itaque deleniti
+                temporibus ab nemo voluptas soluta corrupti est unde aliquam delectus. Voluptatibus odit magni quod
+                accusantium ab! Dolorem?</p>
+
+        </div>
+
+
+
+        <div class="card">
+            <a class="card-content">
+                Lorem ipsum dolor sit amet
+            </a>
+        </div>
+
+
+
+    </main>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="./Media/istockphoto-1455901067-1024x1024.jpg" alt="Descripción de la imagen 1">
+            <a>Enlace</a>
+        </div>
+        <div class="gallery-item">
+            <img src="./Media/istockphoto-1555919181-2048x2048.jpg" alt="Descripción de la imagen 2">
+            <a>Enlace</a>
+        </div>
+        <div class="gallery-item">
+            <img src="./Media/photo-1464349095431-e9a21285b5f3.avif" alt="Descripción de la imagen 3">
+            <a>Enlace</a>
+        </div>
+        <div class="gallery-item">
+            <img src="./Media/istockphoto-1127503912-612x612.jpg" alt="Descripción de la imagen 4">
+            <a>Enlace</a>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

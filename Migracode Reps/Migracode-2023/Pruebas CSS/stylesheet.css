@@ -1,0 +1,157 @@
+
+
+.container {
+    background: lightcyan;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, 100px);
+    grid-auto-rows: 100px;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.container div {
+    background: lightgoldenrodyellow;
+    border: 1px solid gray;
+    border-radius: 6px;
+    
+
+}
+
+.container div:first-child {
+    background-color: aquamarine;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Formulario
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #4caf50;
+    width: 300px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #4caf50;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div {
+    margin-bottom: 12px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid #4caf50;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+} */

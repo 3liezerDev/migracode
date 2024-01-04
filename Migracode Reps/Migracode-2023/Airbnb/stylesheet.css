@@ -1,0 +1,398 @@
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+}
+
+
+
+.barra-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0px 6em;
+  background-color: #fff;
+  color: gray;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.first-element {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+
+}
+
+.third-element {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: end;
+
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.airbnb {
+  color: #FF385C;
+  display: block;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  border-radius: 35px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 400px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.button-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+}
+
+.search {
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color: #ff385c;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.otro {
+  display: flex;
+  list-style: none;
+  color: black;
+  
+}
+
+.otro li {
+  margin-left: 10px;
+  margin-right: 12px;
+  
+}
+
+.otro a {
+  font-size: 0.87rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+
+}
+
+
+
+.second-nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80px;
+  padding: 20px 6em 0px;
+  background-color: #fff;
+  
+  
+}
+
+#prevButton,
+#nextButton {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width:3%;
+  align-items: center;
+  overflow: hidden;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+    
+}
+
+.slick-initialized .slick-slide {
+  display: flex !important; /* I am using this important because this class is created by default by the javascript code in this occasion I need to use it.*/
+  align-items: center;
+}
+
+
+
+.carousel-items {
+  padding-top: 1em;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 47.98px;
+  margin-right: 40px;
+  opacity: 0.6425339366515838;
+}
+
+.item:hover {
+  opacity: 1.5;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+.item:active {
+  opacity: 1.5;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+
+.item p {
+  margin: 0px;
+  margin-top: 10px;
+  white-space: nowrap;
+  font-size: 12px;
+
+}
+
+.item img {
+  width: 24px;
+  height: 24px;
+ 
+}
+
+
+
+#filtroInput {
+  width: 4%;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  grid-gap: 10px;
+
+  padding: 0px 6em 0px;
+}
+
+.card {
+  padding: 20px 10px 10px;
+  text-align: center;
+}
+
+.card img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 286px;
+  border-radius: 5%;
+}
+
+/* Responsive design*/
+
+@media (min-width: 1400px) and (max-width:1760px) {
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+    
+  }
+
+  .card img {
+    height: 286px;
+   
+  }
+}
+
+@media (min-width: 1100px) and (max-width:1400px){
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+
+  .card img {
+    height: 200px;
+    
+  }
+
+  .second-element form {
+    width: 220px;
+  }
+
+  h3 {
+    font-size: small;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width:1100px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+
+  
+  
+  .card img {
+    height: 200px;
+    
+  }
+
+  .second-element form {
+    width: 220px;
+  }
+
+  .second-path {
+    display: none;
+  }
+
+  .otro .hidden{
+    display: none;
+  }
+
+  .barra-nav, .second-nav, .container {
+    padding: 14px 3em 0px;
+  }
+
+  h3 {
+    font-size: small;
+  }
+
+  
+}
+
+@media (min-width: 480px) and (max-width:768px)  {
+  .container {
+    grid-template-columns: repeat(2,1fr);
+    /* Solo 1 columna en pantallas muy pequeñas */
+  }
+
+  .second-element form {
+    width: 200px;
+  }
+
+  .second-path, .hidden-3 {
+    display: none;
+  }
+
+  .otro .hidden{
+    display: none;
+  }
+
+  .card img {
+    height: 200px;
+    
+  }
+
+  .barra-nav, .second-nav, .container {
+    padding: 14px 2em 0px;
+  }
+
+  h3 {
+    font-size: small;
+  }
+
+  
+}
+
+@media (min-width: 1px) and (max-width:480px)  {
+  .container {
+    grid-template-columns: 1fr;
+ 
+  }
+
+  .first-element {
+    width: 20%;
+    
+  }
+
+
+
+  .second-element form {
+    width: 118px;
+    overflow: hidden;
+    padding: 1%;
+  }
+
+  .second-path {
+    display: none;
+  }
+
+  .hidden-2, .hidden-3, .third-element{
+    display: none;
+  }
+
+  .otro .hidden{
+    display: none;
+  }
+
+
+
+  .card img {
+    height: 220;
+    width: 100%;
+  }
+
+  .barra-nav, .second-nav, .container {
+    width: 100%;
+    padding: 12px 1em 0px;
+  }
+
+  h3 {
+    font-size: small;
+  }
+}
+
+
+
+.text-card {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: repeat(5, 20px);
+  grid-gap: 10px;
+
+}
+
+.text-1 {
+  grid-column: 1;
+  justify-self: self-start;
+  align-self: center;
+
+}
+
+.text-2 {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: self-center;
+  align-self: center;
+
+
+}
+
+
