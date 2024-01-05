@@ -4,5 +4,8 @@
   },
   "scripts": {
     "dev": "tailwindcss build ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss-animated": "^1.0.1"
   }
 }
